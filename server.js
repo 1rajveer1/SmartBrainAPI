@@ -7,11 +7,17 @@ const knex = require('knex');
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      port : 5432,
-      user : 'postgres',
-      password : 'Raj2251s.',
-      database : 'smart-brain'
+    //   host : '127.0.0.1',
+    //   port : 5432,
+    //   user : 'postgres',
+    //   password : 'Raj2251s.',
+    //   database : 'smart-brain'
+    connectionString: process.env.DATABSE_URL,
+    host: process.env.DATABASE_HOST,
+    port: 5432,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PW,
+    database: process.env.DATABASE_DB
     }
   });
 
