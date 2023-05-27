@@ -15,10 +15,7 @@
     "webpack-cli": "^5.1.1"
   },
   "scripts": {
-    "start": "nodemon server.js",
-    "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
-    "build": "webpack --config=Scripts/config/webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
